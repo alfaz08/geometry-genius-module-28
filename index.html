@@ -54,17 +54,86 @@
             </div>
           </div>
         </div>
-        <!-- Card-->
+        <!--Parallelogram Card-->
         <div class="card w-96 bg-base-100 shadow-xl">
           <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-          
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Parallelogram</button>
+            <h2 class="card-title">parallelogram</h2>
+            <p>Area(A) = b X h</p>
+            <p>
+             <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="Width" name="" id="bas">
+             <span class="ml-2">cm</span>
+             <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="Length" name="" id="hei">
+             <span class="ml-2">cm</span>
+            </p>
+            <p class="text-2xl" >Area: <span id="parallelogram" class="bold" ></span> cm<sup>2</sup></p>
+            <div class="card-actions ">
+              <button id="calculate" onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculator</button>
             </div>
           </div>
         </div>
+        <!--Pentagon Card-->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
+          <div class="card-body"> 
+            <h2 class="card-title">Pentagon</h2>
+            <p>Area(A) = 0.5 X p X b</p>
+            <p>
+             <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="Width" name="" id="first-p">
+             <span class="ml-2">cm</span>
+             <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="Length" name="" id="second-b">
+             <span class="ml-2">cm</span>
+            </p>
+            <p class="text-2xl" >Area: <span id="pentagon" class="bold" ></span> cm<sup>2</sup></p>
+            <div class="card-actions ">
+              <button id="calculate" onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculator</button>
+            </div>
+          </div>
+        </div>
+        <!--Rhombus Card-->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Rhombus</h2>
+            <p>Area(A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+            <p>
+             <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="Width" name="" id="first-d">
+             <span class="ml-2">cm</span>
+             <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="Length" name="" id="second-d">
+             <span class="ml-2">cm</span>
+            </p>
+            <p class="text-2xl" >Area: <span id="rhombus" class="bold" ></span> cm<sup>2</sup></p>
+            <div class="card-actions ">
+              <button id="calculate" onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculator</button>
+            </div>
+          </div>
+        </div>
+        <!--Ellipse Card-->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Ellipse</h2>
+            <p>Area(A) = πab</p>
+            <p>
+             <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="Width" name="" id="first-radius">
+             <span class="ml-2">cm</span>
+             <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="Length" name="" id="second-radius">
+             <span class="ml-2">cm</span>
+            </p>
+            <p class="text-2xl" >Area: <span id="ellipse" class="bold" ></span> cm<sup>2</sup></p>
+            <div class="card-actions ">
+              <button id="calculate" onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculator</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+       
       </div>
       <!--Area Calculator-->
       <div class="w-[400px]">
@@ -73,6 +142,7 @@
      </div>
    
   </main>
+  <script src="utilities.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
