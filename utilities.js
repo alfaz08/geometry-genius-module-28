@@ -20,3 +20,11 @@ function setFinalValue(elementId3,finalValue){
   const setValue = document.getElementById(elementId3);
   setValue.innerText = finalValue;
 }
+
+function addToCalculationEntry(areaType,area){
+  console.log(areaType+' '+area);
+  const calculationEntry =document.getElementById('calculation-entry')
+  const p =document.createElement('p');
+  p.innerHTML =`${areaType} ${area} cm`
+  calculationEntry.appendChild(p);
+}
